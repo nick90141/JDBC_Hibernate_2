@@ -8,4 +8,8 @@ public class PassengerTrain extends Train {
         super(trainCars);
 
     }
+
+    public void addTrainCar(TrainCar trainCar) {
+        this.getTrainCars().add(trainCar);
+    }
 }

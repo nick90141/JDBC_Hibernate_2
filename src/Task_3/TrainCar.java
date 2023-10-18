@@ -16,4 +16,6 @@ public class TrainCar {
     public int getBaggageCount() {
         return baggageCount;
     }
+
+
 }

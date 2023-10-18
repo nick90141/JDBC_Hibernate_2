@@ -10,6 +10,7 @@ public class TrainDAO {
     private List<Train> trains;
 
     public TrainDAO(List<Train> trains) {
+
         this.trains = trains;
     }
 
@@ -37,5 +38,7 @@ public class TrainDAO {
         }
         return result;
     }
-
+    public void addTrain(Train train) {
+        trains.add(train);
+    }
 }

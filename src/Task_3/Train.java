@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Train {
+
     private List<TrainCar> trainCars;
 
     public Train(List<TrainCar> trainCars) {
@@ -35,6 +36,9 @@ public class Train {
             }
         }
         return result;
+    }
+    public List<TrainCar> getTrainCars() {
+        return trainCars;
     }
 }
 

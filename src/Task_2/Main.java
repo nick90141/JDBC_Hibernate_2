@@ -38,5 +38,20 @@ public class Main {
         for (TrainCar car : selectedCars) {
             System.out.println("Passengers: " + car.getPassengerCount() + ", Baggage: " + car.getBaggageCount());
         }
+
+
+
+
+
+        System.out.println("Add a new train:");
+        List<TrainCar> trainCars2 = new ArrayList<>();
+        trainCars2.add(new TrainCar(60, 25));
+        trainCars2.add(new TrainCar(45, 18));
+        Train newTrain = new PassengerTrain(trainCars2);
+        trainDAO.addTrain(newTrain);
+
+
+        System.out.println("Total passengers after adding new train: " + trainDAO.getTotalPassengers());
+        System.out.println("Total baggage after adding new train: " + trainDAO.getTotalBaggage());
     }
-}
+    }
